@@ -1,0 +1,694 @@
+/* Custom CSS styles for FashionGit clothing store */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Customize the header */
+nav {
+    background-color: #333;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+.navbar-brand img {
+    max-width: 150px;
+    height: 100px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-width: 80px;
+    }
+}
+
+/* Style the hero section */
+.hero-section {
+    position: relative;
+    background-color: #f8f8f8;
+    height: 50vh; /* Set the height to 50% of the viewport height */
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Set the precise size for the hero image */
+.precise-size {
+    background-image: url(images/banner/banner-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Adjust styles for smaller screens */
+
+@media(max-width:0px){
+
+    
+
+    .hero-content{
+        height: 50vh;
+        padding: 10px 0;
+    }
+
+    
+}
+
+
+@media (max-width: 767px) {
+
+    
+    .hero-section {
+        height: 100vh; /* Set the height to 100% of the viewport height on mobile */
+        padding: 30px 0;
+    }
+
+    .hero-content {
+        width: 90%; /* Adjust the width for better visibility on mobile */
+        top: 40%; /* Move the content slightly higher on mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 36px; /* Reduce font size for smaller screens */
+        margin-bottom: 15px; /* Reduce margin for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        margin-bottom: 20px; /* Reduce margin for smaller screens */
+    }
+
+    .hero-content .btn {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    .featured-products-section {
+        padding: 30px 0;
+    }
+
+    .product-card img {
+        height: 180px; /* Reduce the height of product images for smaller screens */
+    }
+
+    .product-card h3 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .product-card p {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    .product-price {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+
+    .services-section {
+        padding: 30px 0;
+    }
+
+    .service-card i {
+        font-size: 30px; /* Reduce the icon size for smaller screens */
+    }
+
+    .service-card h3 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .about-us-section {
+        padding: 30px 0;
+    }
+
+    .about-us-image {
+        max-height: 300px; /* Limit the maximum height of the image for smaller screens */
+    }
+
+    .about-us-section h2 {
+        font-size: 30px; /* Reduce font size for smaller screens */
+        margin-bottom: 20px; /* Reduce margin for smaller screens */
+    }
+
+    .about-us-section p {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        margin-bottom: 20px; /* Reduce margin for smaller screens */
+    }
+}
+
+/* Adjust styles for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-content h1 {
+        font-size: 40px; /* Reduce font size for tablets */
+        margin-bottom: 10px; /* Reduce margin for tablets */
+    }
+
+    .hero-content p {
+        font-size: 14px; /* Reduce font size for tablets */
+        margin-bottom: 15px; /* Reduce margin for tablets */
+    }
+}
+
+/* Style the featured products section */
+.featured-products-section {
+    padding: 80px 0;
+}
+
+.product-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-card img {
+    width: 100%; /* Set the width to 100% to fit within the container */
+    height: 250px; /* Define the desired height for the product images */
+    object-fit: cover; /* Ensure the image maintains its aspect ratio and covers the container */
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style the services section */
+.services-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.service-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-card i {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the about us section */
+.about-us-section {
+    padding: 80px 0;
+    background-color: rgb(69, 255, 103);
+}
+
+.about-us-image {
+    width: 100%;
+    height: auto;
+    max-height: 350px; /* Limit the maximum height of the image to prevent overflow */
+}
+
+.about-us-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about-us-section p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+
+
+/* Style the shop section */
+.shop-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #1de463;
+    border-radius: 5%;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 767px) {
+    .shop-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    .product-card h3 {
+        font-size: 20px;
+    }
+
+    .product-card p {
+        font-size: 14px;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+}
+
+.banner-section {
+    background-color: rgb(69, 235, 146);
+    background-position: center center;
+    height: 60vh; /* Set the height of the banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    text-align: center;
+    color: #000000;
+}
+
+.banner-content h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.banner-content .btn {
+    font-size: 16px;
+}
+
+.about-us-section {
+    padding: 80px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.about-us-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-content {
+    flex: 1;
+}
+
+.about-us-content h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about-us-content p {
+    font-size: 18px;
+    color: #141414;
+    margin-bottom: 30px;
+}
+
+/* Style the testimonials section */
+.testimonials-section {
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-card {
+    text-align: center;
+    width: 280px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+}
+
+/* Style the team section */
+.team-section {
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    text-align: center;
+    width: 280px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-member-role {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Style the call-to-action section */
+.cta-section {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-content .btn {
+    font-size: 20px;
+}
+
+
+/* Adjust padding for smaller screens */
+@media (max-width: 767px) {
+
+
+    .featured-products-section,
+    .services-section,
+    .about-us-section,
+    .testimonials-section,
+    .team-section,
+    .cta-section {
+        padding: 40px 0;
+    }
+}
+
+/* Style the contact us section */
+    
+
+
+
+    .contact-info {
+        padding: 30px;
+        background-color: #ffffff86;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-info h3 {
+        color: #ffffff;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-info ul {
+        color: rgb(255, 255, 255);
+        list-style: none;
+    }
+    
+    .contact-info li {
+        margin-bottom: 15px;
+    }
+    
+    .contact-info i {
+        margin-right: 10px;
+        color: #ffffff;
+    }
+
+/* Footer Styles */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.login-image {
+    width: 50%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-form {
+    width: 50%;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-register {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.forgot-register a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.forgot-register p {
+    margin-top: 10px;
+}
+
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-top: 0; /* Remove the aspect ratio padding */
+    margin: 20px auto; /* Center the map */
+    max-width: 1000px; /* Maximum width of the map */
+}
+
+.map-responsive iframe {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Set a fixed height for the iframe */
+    border: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-image {
+        width: 100%;
+        height: 40%;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 596px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-image {
+        width: 100%;
+        height: 40%;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style for the modal content */
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 30px; /* Increased padding to make the modal bigger */
+    border-radius: 5px;
+    max-width: 400px; /* Increased max-width to make the modal wider */
+    text-align: center;
+  }
+  
+  /* Style for the close button (X) */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-content img {
+    max-width: 100%;
+    max-height: 50vh; /* Adjust this value as needed to control the height of the image */
+    object-fit: contain;
+  }
